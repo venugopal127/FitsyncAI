@@ -19,6 +19,7 @@ def get_mongo_client():
 def store_response_in_mongo(response, user_data):
     collection = get_mongo_client()
     
+
     # If MongoDB connection failed, return early
     if collection is None:
         return
